@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+        .wrap {
+            display: flex;
+        }
+
+        .actions-block {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .radio-buttons {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            margin-right: 30px;
+        }
+
+        label {
+            display: grid;
+            grid-template-columns: 100px 20px;
+            cursor: pointer;
+        }
+
+        .rectangles-wraper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding: 0 30px;
+
+        }
+
+        .rectangle {
+            background-color: red;
+            width: 100px;
+            height: 50px;
+        }
+
+        .data-wraper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+	</style>
+</head>
+<body>
+<main>
+	<div class="wrap">
+		<div class="actions-block">
+			<div class="radio-buttons">
+				<label>
+					Не блокирует
+					<input value="1" checked type="radio" name="type" id="async">
+				</label>
+				<label>
+					Блокирует
+					<input value="2" type="radio" name="type" id="sync">
+				</label>
+				<div class="status"></div>
+			</div>
+			<div class="header-button">
+				<button class="action-button">
+					Start
+				</button>
+			</div>
+		</div>
+		<div class="rectangles-wraper">
+			<!-- Тут будут отрисованы прямоугольники -->
+		</div>
+		<div class="data-wraper">
+			<!-- Тут будут отрисованы посты из запроса -->
+		</div>
+	</div>
+</main>
+<script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+    "profession": "Frontend developer",
+    "modules count": 5,
+    "levels": [
+        "введение",
+        "основы",
+        "расширенный",
+        "фреймворки",
+        "продвинутый"
+    ],
+    "students": [
+        {
+            "name": "Kirill",
+            "level": 3
+        },
+        {
+            "name": "Anna",
+            "level": 2
+        },
+        {
+            "name": "Vasya",
+            "level": 4
+        }
+    ]
+}
